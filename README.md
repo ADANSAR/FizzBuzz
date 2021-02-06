@@ -63,3 +63,5 @@ $ mvn test
 ```sh
 $ mvn install
 ```
+
+To change the max value of the fizzbuzz, you can change the constant DEFAULT_FIZZ_BUZZ_MAX_PARAMETER_VALUE in the file com.fizzbuzz.utils.Constants.  
