@@ -1,0 +1,45 @@
+package com.fizzbuzz.impl;
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Service;
+
+/**
+ * Holder for Application Context
+ */
+@Service
+public class ApplicationContextHolder implements ApplicationContextAware {
+
+    private static ApplicationContext applicationContext;
+
+    /**
+     * Updater for ApplicationContextReference
+     */
+    private static class ApplicationContextReferenceUpdater {
+        void updateApplicationContextReference(final ApplicationContext applicationContext) {
+            ApplicationContextHolder.applicationContext = applicationContext;
+        }
+    }
+
+    /**
+     * Holder for ApplicationContextReferenceUpdater
+     */
+    private static class ApplicationContextReferenceUpdaterHolder {
+        static ApplicationContextReferenceUpdater instance = new ApplicationContextReferenceUpdater();
+    }
+
+    private ApplicationContextHolder() {
+        super();
+    }
+
+    /**
+     * @param applicationContext
+     * @throws BeansException
+     */
+    @Override
+    public void setApplicationContext(final ApplicationContext applicationContext) {
+        ApplicationContextReferenceUpdaterHolder.instance
+                .updateApplicationContextReference(applicationContext);
+    }
+}

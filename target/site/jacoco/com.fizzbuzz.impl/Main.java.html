@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">FizzBuzz Project</a> &gt; <a href="index.source.html" class="el_package">com.fizzbuzz.impl</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.fizzbuzz.impl;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.fizzbuzz.impl.parameters.DefaultFizzBuzzMaxParameter;
+import com.fizzbuzz.interfaces.FizzBuzz;
+import com.fizzbuzz.interfaces.parameters.FizzBuzzMaxParameter;
+import com.fizzbuzz.utils.Constants;
+
+/**
+ * Main
+ */
+<span class="nc" id="L15">public final class Main {</span>
+
+    /**
+     * @param args
+     */
+    public static void main(final String[] args) {
+<span class="nc" id="L21">        final ApplicationContext context = new ClassPathXmlApplicationContext(Constants.SPRING_XML);</span>
+<span class="nc" id="L22">        final FizzBuzz myFizzBuzz = (FizzBuzz) context.getBean(Constants.STANDARD_FIZZ_BUZZ);</span>
+<span class="nc" id="L23">        final FizzBuzzMaxParameter fizzBuzzMax = new DefaultFizzBuzzMaxParameter();</span>
+<span class="nc" id="L24">        myFizzBuzz.fizzBuzz(fizzBuzzMax.obtainMaxValue());</span>
+<span class="nc" id="L25">        ((ConfigurableApplicationContext) context).close();</span>
+
+<span class="nc" id="L27">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

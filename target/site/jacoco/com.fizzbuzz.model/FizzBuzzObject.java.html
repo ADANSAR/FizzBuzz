@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FizzBuzzObject.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">FizzBuzz Project</a> &gt; <a href="index.source.html" class="el_package">com.fizzbuzz.model</a> &gt; <span class="el_source">FizzBuzzObject.java</span></div><h1>FizzBuzzObject.java</h1><pre class="source lang-java linenums">package com.fizzbuzz.model;
+
+import java.io.PrintStream;
+
+import com.fizzbuzz.utils.Constants;
+
+public class FizzBuzzObject {
+
+    private int number;
+    private boolean dividedBy3;
+    private boolean dividedBy5;
+    private PrintStream textPrinter;
+
+<span class="fc" id="L14">    public FizzBuzzObject(int number) {</span>
+<span class="fc" id="L15">        this.number = number;</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        dividedBy3 = number % 3 == 0;</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        dividedBy5 = number % 5 == 0;</span>
+<span class="fc" id="L18">        textPrinter = System.out;</span>
+<span class="fc" id="L19">    }</span>
+
+<span class="nc" id="L21">    public FizzBuzzObject(int number, PrintStream ps) {</span>
+<span class="nc" id="L22">        this.number = number;</span>
+<span class="nc bnc" id="L23" title="All 2 branches missed.">        dividedBy3 = number % 3 == 0;</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        dividedBy5 = number % 5 == 0;</span>
+<span class="nc" id="L25">        textPrinter = ps;</span>
+<span class="nc" id="L26">    }</span>
+
+    public void printText() {
+<span class="fc bfc" id="L29" title="All 4 branches covered.">        if (!dividedBy3 &amp;&amp; !dividedBy5) {</span>
+<span class="fc" id="L30">            textPrinter.println(String.valueOf(number));</span>
+<span class="fc" id="L31">        } else {</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">            if (dividedBy3) {</span>
+<span class="fc" id="L33">                textPrinter.println(String.valueOf(Constants.FIZZ));</span>
+            }
+<span class="fc bfc" id="L35" title="All 2 branches covered.">            if (dividedBy5) {</span>
+<span class="fc" id="L36">                textPrinter.println(String.valueOf(Constants.BUZZ));</span>
+            }
+        }
+<span class="fc" id="L39">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
