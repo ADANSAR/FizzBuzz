@@ -1,4 +1,4 @@
-## FizzBuzz
+# FizzBuzz
 
 The FizzBuzz problem is a classic test given in coding interviews.
 
@@ -10,7 +10,6 @@ and both if an integer is divisible by both 3 and 5.
 # Structure
 
 ```
-
 FizzBuzzCombe
 |____resources
 | |____spring
@@ -41,14 +40,15 @@ FizzBuzzCombe
 |
 |____pom.xml
 |____README.md
+```
 
 # Installation
 
-##### Prerequisites
+## Prerequisites
 
   - Jdk >= 1.8.
 
-##### Compilation
+## Compilation
 
 1- The application can be run using the main class : com.fizzbuzz.impl.Main.
 
