@@ -58,8 +58,8 @@ FizzBuzzCombe
 $ mvn test
 ```
 
-3- To build the application :
+3- To install the application :
 
 ```sh
-$ mvn build
+$ mvn install
 ```
