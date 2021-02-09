@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-FizzBuzz Project,com.fizzbuzz.model,FizzBuzzObject,27,57,4,12,6,14,3,8,1,2
-FizzBuzz Project,com.fizzbuzz.impl,ApplicationContextHolder,2,4,0,0,1,3,1,1,1,1
+FizzBuzz Project,com.fizzbuzz.model,FizzBuzzObject,0,57,0,12,0,14,0,8,0,2
+FizzBuzz Project,com.fizzbuzz.impl,ApplicationContextHolder,0,4,0,0,0,3,0,1,0,1
 FizzBuzz Project,com.fizzbuzz.impl,ApplicationContextHolder.ApplicationContextReferenceUpdater,0,3,0,0,0,2,0,1,0,1
 FizzBuzz Project,com.fizzbuzz.impl,ApplicationContextHolder.ApplicationContextReferenceUpdaterHolder,0,6,0,0,0,1,0,1,0,1
 FizzBuzz Project,com.fizzbuzz.impl,Main,25,0,0,0,7,0,2,0,2,0

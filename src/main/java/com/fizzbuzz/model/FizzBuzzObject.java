@@ -1,34 +1,33 @@
 package com.fizzbuzz.model;
 
-import java.io.PrintStream;
+import com.fizzbuzz.interfaces.FizzBuzzBehaviour;
+import com.fizzbuzz.utils.FizzBuzzUtils;
 
-import com.fizzbuzz.utils.Constants;
+public abstract class FizzBuzzObject implements FizzBuzzBehaviour {
 
-public class FizzBuzzObject {
+    private Integer number;
 
-    private int number;
-    private boolean dividedBy3;
-    private boolean dividedBy5;
-    private PrintStream textPrinter;
+    public FizzBuzzObject() {
+        // default constructor
+    }
 
     public FizzBuzzObject(int number) {
         this.number = number;
-        dividedBy3 = number % 3 == 0;
-        dividedBy5 = number % 5 == 0;
-        textPrinter = System.out;
     }
 
-    public void printText() {
-        if (!dividedBy3 && !dividedBy5) {
-            textPrinter.println(String.valueOf(number));
-        } else {
-            if (dividedBy3) {
-                textPrinter.println(String.valueOf(Constants.FIZZ));
-            }
-            if (dividedBy5) {
-                textPrinter.println(String.valueOf(Constants.BUZZ));
-            }
+    @Override
+    public boolean isDivisible(int number) {
+        return FizzBuzzUtils.numberIsMultipleOfAnotherNumber(number, this.number);
+    };
+
+    @Override
+    public boolean containsRepresentativeNumber(int number) {
+        if (this.number == null) {
+            return false;
         }
+        return this.number.toString().contains(String.valueOf(number));
     }
 
+    @Override
+    public abstract void print(int number);
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="FizzBuzzTest" time="1.263" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="FizzBuzzTest" time="1.559" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\bin"/>
     <property name="java.vm.version" value="25.152-b16"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\HS5984\Downloads\FizzBuzzCombe"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\HS5984\Downloads\FizzBuzzCombe\FizzBuzz"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\HS5984\Downloads\FizzBuzzCombe"/>
+    <property name="user.dir" value="C:\Users\HS5984\Downloads\FizzBuzzCombe\FizzBuzz"/>
     <property name="java.runtime.version" value="1.8.0_152-b16"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\endorsed"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Public\Projets\Propulse\trunk\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4527648948513563631.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Public\Projets\Propulse\trunk\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8496239348399319909.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Public/Projets/COMMON/Tools/jdk8_152_x64/jre/bin/server;C:/Users/Public/Projets/COMMON/Tools/jdk8_152_x64/jre/bin;C:/Users/Public/Projets/COMMON/Tools/jdk8_152_x64/jre/lib/amd64;C:\Program Files (x86)\Python\Python38-32\Scripts\;C:\Program Files (x86)\Python\Python38-32\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\bin;C:\Program Files (x86)\GitExtensions\;C:\Ruby27-x64\bin;C:\Users\HS5984\AppData\Local\Microsoft\WindowsApps;C:\Users\Public\Projets\Propulse\trunk;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -53,7 +53,7 @@
     <property name="java.ext.dirs" value="C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\resources.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\rt.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\sunrsasign.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\jsse.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\jce.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\charsets.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\lib\jfr.jar;C:\Users\Public\Projets\COMMON\Tools\jdk8_152_x64\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\HS5984\Downloads\FizzBuzzCombe\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\HS5984\Downloads\FizzBuzzCombe\FizzBuzz\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="FizzBuzzTest" name="testFizzBuzz" time="1.263"/>
+  <testcase classname="FizzBuzzTest" name="testFizzBuzz" time="1.559"/>
 </testsuite>

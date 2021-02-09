@@ -18,25 +18,18 @@ public class FizzBuzzObject {
 <span class="fc" id="L18">        textPrinter = System.out;</span>
 <span class="fc" id="L19">    }</span>
 
-<span class="nc" id="L21">    public FizzBuzzObject(int number, PrintStream ps) {</span>
-<span class="nc" id="L22">        this.number = number;</span>
-<span class="nc bnc" id="L23" title="All 2 branches missed.">        dividedBy3 = number % 3 == 0;</span>
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        dividedBy5 = number % 5 == 0;</span>
-<span class="nc" id="L25">        textPrinter = ps;</span>
-<span class="nc" id="L26">    }</span>
-
     public void printText() {
-<span class="fc bfc" id="L29" title="All 4 branches covered.">        if (!dividedBy3 &amp;&amp; !dividedBy5) {</span>
-<span class="fc" id="L30">            textPrinter.println(String.valueOf(number));</span>
-<span class="fc" id="L31">        } else {</span>
-<span class="fc bfc" id="L32" title="All 2 branches covered.">            if (dividedBy3) {</span>
-<span class="fc" id="L33">                textPrinter.println(String.valueOf(Constants.FIZZ));</span>
+<span class="fc bfc" id="L22" title="All 4 branches covered.">        if (!dividedBy3 &amp;&amp; !dividedBy5) {</span>
+<span class="fc" id="L23">            textPrinter.println(String.valueOf(number));</span>
+<span class="fc" id="L24">        } else {</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">            if (dividedBy3) {</span>
+<span class="fc" id="L26">                textPrinter.println(String.valueOf(Constants.FIZZ));</span>
             }
-<span class="fc bfc" id="L35" title="All 2 branches covered.">            if (dividedBy5) {</span>
-<span class="fc" id="L36">                textPrinter.println(String.valueOf(Constants.BUZZ));</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">            if (dividedBy5) {</span>
+<span class="fc" id="L29">                textPrinter.println(String.valueOf(Constants.BUZZ));</span>
             }
         }
-<span class="fc" id="L39">    }</span>
+<span class="fc" id="L32">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

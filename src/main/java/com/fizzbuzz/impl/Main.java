@@ -23,7 +23,6 @@ public final class Main {
         final FizzBuzzMaxParameter fizzBuzzMax = new DefaultFizzBuzzMaxParameter();
         myFizzBuzz.fizzBuzz(fizzBuzzMax.obtainMaxValue());
         ((ConfigurableApplicationContext) context).close();
-
     }
 
 }
