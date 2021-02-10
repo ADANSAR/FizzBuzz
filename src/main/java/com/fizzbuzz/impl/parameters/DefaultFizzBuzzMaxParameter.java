@@ -1,12 +1,13 @@
 package com.fizzbuzz.impl.parameters;
 
 import com.fizzbuzz.interfaces.parameters.FizzBuzzMaxParameter;
-import com.fizzbuzz.utils.Constants;
 
 /**
  * Parameter for DefaultFizzBuzzMaxLimit
  */
 public final class DefaultFizzBuzzMaxParameter implements FizzBuzzMaxParameter {
+
+    public static final int DEFAULT_FIZZ_BUZZ_MAX_PARAMETER_VALUE = 100;
 
     private final int fizzBuzzMaxParameterValue;
 
@@ -14,7 +15,7 @@ public final class DefaultFizzBuzzMaxParameter implements FizzBuzzMaxParameter {
      *
      */
     public DefaultFizzBuzzMaxParameter() {
-        fizzBuzzMaxParameterValue = Constants.DEFAULT_FIZZ_BUZZ_MAX_PARAMETER_VALUE;
+        fizzBuzzMaxParameterValue = DEFAULT_FIZZ_BUZZ_MAX_PARAMETER_VALUE;
     }
 
     /**
